@@ -1,0 +1,7 @@
+
+###### Testing test-hello2
+./microc.native < tests/test-hello2.mc > test-hello2.ll
+lli test-hello2.ll > test-hello2.out
+diff -b test-hello2.out tests/test-hello2.out > test-hello2.diff
+FAILED test-hello2.out differs from tests/test-hello2.out
+###### FAILED
